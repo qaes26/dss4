@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ملخص نظام دعم القرار - قيس جازي</title>
+    <!-- استيراد خط عربي جميل من جوجل -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <!-- استيراد مكتبة Tailwind CSS للتصميم -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- استيراد مكتبة أيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Cairo', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f3f4f6;
+            scroll-behavior: smooth;
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .gradient-text {
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-image: linear-gradient(to right, #0284c7, #2563eb);
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased">
+
+    <!-- الترويسة / الغلاف -->
+    <header class="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div>
+                <h1 class="text-xl font-bold text-brand-800"><i class="fas fa-network-wired ml-2"></i>نظم دعم القرار (DSS)</h1>
+            </div>
+            <div class="text-sm font-semibold bg-brand-100 text-brand-800 px-3 py-1 rounded-full border border-brand-200">
+                من إعداد: قيس جازي
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-8 space-y-12">
+
+        <!-- مقدمة -->
+        <section class="text-center space-y-4">
+            <h2 class="text-4xl font-black text-gray-900 leading-tight">ملخص شامل للفصل الدراسي</h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">الفوائد، الإمكانيات، المكونات، وأنواع قواعد البيانات في نظم دعم القرار.</p>
+        </section>
+
+        <!-- القسم الأول: الفوائد العشر -->
+        <section>
+            <div class="flex items-center gap-3 mb-6">
+                <div class="bg-blue-600 text-white p-2 rounded-lg"><i class="fas fa-star text-xl"></i></div>
+                <h3 class="text-2xl font-bold text-gray-800">1. الفوائد الرئيسية للنظام</h3>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- بطاقة لكل فائدة -->
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 card-hover flex items-start gap-3">
+                    <span class="bg-blue-100 text-blue-600 w-8 h-8 flex items-center justify-center rounded-full font-bold flex-shrink-0">1</span>
+                    <p class="font-semibold">دعم المشاكل المعقدة وإيجاد حلول لها.</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 card-hover flex items-start gap-3">
+                    <span class="bg-blue-100 text-blue-600 w-8 h-8 flex items-center justify-center rounded-full font-bold flex-shrink-0">2</span>
+                    <p class="font-semibold">الاستجابة السريعة للمواقف غير المتوقعة.</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 card-hover flex items-start gap-3">
+                    <span class="bg-blue-100 text-blue-600 w-8 h-8 flex items-center justify-center rounded-full font-bold flex-shrink-0">3</span>
+                    <p class="font-semibold">تجربة استراتيجيات مختلفة بسرعة وفعالية.</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 card-hover flex items-start gap-3">
+                    <span class="bg-blue-100 text-blue-600 w-8 h-8 flex items-center justify-center rounded-full font-bold flex-shrink-0">4</span>
+                    <p class="font-semibold">التعليم والتدريب وتطوير خبرات المدراء.</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 card-hover flex items-start gap-3">
+                    <span class="bg-blue-100 text-blue-600 w-8 h-8 flex items-center justify-center rounded-full font-bold flex-shrink-0">5</span>
+                    <p class="font-semibold">تسهيل الاتصال والتعاون الجماعي.</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 card-hover flex items-start gap-3">
+                    <span class="bg-blue-100 text-blue-600 w-8 h-8 flex items-center justify-center rounded-full font-bold flex-shrink-0">6</span>
+                    <p class="font-semibold">تحسين السيطرة الإدارية على الأداء.</p>
+                </div>
+                 <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 card-hover flex items-start gap-3">
+                    <span class="bg-blue-100 text-blue-600 w-8 h-8 flex items-center justify-center rounded-full font-bold flex-shrink-0">7</span>
+                    <p class="font-semibold">توفير التكلفة وتقليل النفقات.</p>
+                </div>
+                 <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 card-hover flex items-start gap-3">
+                    <span class="bg-blue-100 text-blue-600 w-8 h-8 flex items-center justify-center rounded-full font-bold flex-shrink-0">8</span>
+                    <p class="font-semibold">إنتاج قرارات أفضل وأكثر إيجابية.</p>
+                </div>
+                 <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 card-hover flex items-start gap-3">
+                    <span class="bg-blue-100 text-blue-600 w-8 h-8 flex items-center justify-center rounded-full font-bold flex-shrink-0">9</span>
+                    <p class="font-semibold">زيادة فعالية الإدارة وتوفير الوقت.</p>
+                </div>
+                 <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 card-hover flex items-start gap-3">
+                    <span class="bg-blue-100 text-blue-600 w-8 h-8 flex items-center justify-center rounded-full font-bold flex-shrink-0">10</span>
+                    <p class="font-semibold">تحسين إنتاجية المحلل.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- القسم الثاني: الإمكانيات -->
+        <section>
+            <div class="flex items-center gap-3 mb-6">
+                <div class="bg-indigo-600 text-white p-2 rounded-lg"><i class="fas fa-lightbulb text-xl"></i></div>
+                <h3 class="text-2xl font-bold text-gray-800">2. إمكانيات النظام (الشرح التفصيلي)</h3>
+            </div>
+
+            <div class="space-y-4">
+                <!-- كارد تفصيلي 1 -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden border-r-4 border-indigo-500">
+                    <div class="p-6">
+                        <h4 class="text-lg font-bold text-indigo-700 mb-2">أ. اكتشاف وحل المشاكل</h4>
+                        <p class="text-gray-600 leading-relaxed">
+                            النظام لا يقدم الحل فقط، بل يركز على فهم واكتشاف المشكلة في مراحلها الأولى. الهدف هو أن تكون الإدارة <span class="font-bold text-gray-800">استباقية (Proactive)</span> وتتنبأ بالمشاكل قبل تفاقمها.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- كارد تفصيلي 2 -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden border-r-4 border-indigo-500">
+                    <div class="p-6">
+                        <h4 class="text-lg font-bold text-indigo-700 mb-2">ب. النمذجة (Modeling)</h4>
+                        <p class="text-gray-600 leading-relaxed mb-3">
+                            استخدام النماذج الرياضية لهيكلة الواقع والتنبؤ بالمستقبل. تشمل:
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full text-sm font-semibold">بحوث العمليات</span>
+                            <span class="bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full text-sm font-semibold">تحليل الانحدار</span>
+                            <span class="bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full text-sm font-semibold">السلاسل الزمنية</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- كارد تفصيلي 3 -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden border-r-4 border-indigo-500">
+                    <div class="p-6">
+                        <h4 class="text-lg font-bold text-indigo-700 mb-2">ج. تحليل ماذا-لو (What-If Analysis)</h4>
+                        <p class="text-gray-600 leading-relaxed">
+                            قدرة النظام على الإجابة عن سيناريوهات افتراضية وتوفير أدوات تحليلية مثل التحليل المالي وتحليل المخاطر لدعم المدير قبل اتخاذ القرار النهائي.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- كارد تفصيلي 4 -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden border-r-4 border-indigo-500">
+                    <div class="p-6">
+                        <h4 class="text-lg font-bold text-indigo-700 mb-2">د. المرونة والتحليل الخاص (Ad-hoc)</h4>
+                        <p class="text-gray-600 leading-relaxed">
+                            القدرة على التعامل مع نوعين من القرارات:
+                            <br>1. <strong>القرارات المتكررة:</strong> الروتينية اليومية.
+                            <br>2. <strong>القرارات الخاصة (Ad-hoc):</strong> تلبية طلبات المدير المفاجئة والخاصة بسرعة ومرونة عالية.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- القسم الثالث: الهيكل -->
+        <section>
+            <div class="flex items-center gap-3 mb-6">
+                <div class="bg-emerald-600 text-white p-2 rounded-lg"><i class="fas fa-shapes text-xl"></i></div>
+                <h3 class="text-2xl font-bold text-gray-800">3. مكونات النظام (المثلث الذهبي)</h3>
+            </div>
+
+            <div class="bg-emerald-900 rounded-2xl p-8 text-white text-center relative overflow-hidden">
+                <!-- خلفية زخرفية -->
+                <div class="absolute top-0 left-0 w-full h-full opacity-10">
+                    <i class="fas fa-network-wired text-9xl absolute -left-10 -top-10"></i>
+                </div>
+                
+                <div class="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20">
+                        <i class="fas fa-database text-3xl mb-3 text-emerald-300"></i>
+                        <h4 class="text-xl font-bold mb-2">قاعدة البيانات</h4>
+                        <p class="text-sm text-emerald-100">المادة الخام (المعلومات الداخلية والخارجية).</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20">
+                        <i class="fas fa-brain text-3xl mb-3 text-emerald-300"></i>
+                        <h4 class="text-xl font-bold mb-2">قاعدة النماذج</h4>
+                        <p class="text-sm text-emerald-100">المعالج الذكي (القوانين والمعادلات).</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20">
+                        <i class="fas fa-desktop text-3xl mb-3 text-emerald-300"></i>
+                        <h4 class="text-xl font-bold mb-2">قاعدة الحوار</h4>
+                        <p class="text-sm text-emerald-100">واجهة المستخدم (طريقة التواصل مع النظام).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- القسم الرابع: قواعد البيانات -->
+        <section>
+            <div class="flex items-center gap-3 mb-6">
+                <div class="bg-rose-600 text-white p-2 rounded-lg"><i class="fas fa-server text-xl"></i></div>
+                <h3 class="text-2xl font-bold text-gray-800">4. أنواع قواعد البيانات ومكوناتها</h3>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- القائمة: أنواع القواعد -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-200">
+                    <h4 class="text-lg font-bold text-gray-800 mb-4 border-b pb-2">أنواع قواعد البيانات (7 أنواع)</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-rose-500 mt-1"></i>
+                            <div><strong>التحليلية (Analytical):</strong> للتحليل وتستخدم تقنيات OLAP.</div>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-rose-500 mt-1"></i>
+                            <div><strong>التشغيلية (Operational):</strong> للمعاملات اليومية (الفواتير).</div>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-rose-500 mt-1"></i>
+                            <div><strong>الموزعة (Distributed):</strong> موزعة على فروع الشركة المختلفة.</div>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-rose-500 mt-1"></i>
+                            <div><strong>مخازن البيانات (Data Warehouse):</strong> أرشيف تاريخي لتحليل الاتجاهات.</div>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-rose-500 mt-1"></i>
+                            <div><strong>المستخدم النهائي (End-User):</strong> ملفات شخصية على جهاز الموظف.</div>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-rose-500 mt-1"></i>
+                            <div><strong>النصية (Text):</strong> للوثائق والمستندات.</div>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-rose-500 mt-1"></i>
+                            <div><strong>الخارجية (External):</strong> الوصول لبيانات خارج المنظمة.</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- القائمة: مكونات DBMS -->
+                <div class="bg-gray-800 text-white p-6 rounded-2xl shadow-sm">
+                    <h4 class="text-lg font-bold mb-4 border-b border-gray-600 pb-2">مكونات نظام إدارة القواعد (DBMS)</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-center gap-3">
+                            <span class="bg-gray-700 px-2 py-1 rounded text-xs font-mono text-yellow-400">DBMS Engine</span>
+                            <span>محرك النظام (القلب المشغل).</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="bg-gray-700 px-2 py-1 rounded text-xs font-mono text-yellow-400">Data Manipulation</span>
+                            <span>معالجة البيانات (إضافة/حذف).</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="bg-gray-700 px-2 py-1 rounded text-xs font-mono text-yellow-400">Data Definition</span>
+                            <span>تعريف البيانات (القاموس).</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="bg-gray-700 px-2 py-1 rounded text-xs font-mono text-yellow-400">Application Gen.</span>
+                            <span>إنشاء التطبيقات والواجهات.</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="bg-gray-700 px-2 py-1 rounded text-xs font-mono text-yellow-400">Data Admin</span>
+                            <span>إدارة الصلاحيات والأمان.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- الفوتر -->
+    <footer class="bg-white border-t border-gray-200 mt-12 py-8">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <p class="text-gray-600 font-medium">تم تلخيص هذا المحتوى من المقرر الدراسي</p>
+            <div class="mt-2 text-brand-800 font-bold text-lg">
+                <i class="fas fa-pen-nib ml-2"></i>من إعداد: قيس جازي
+            </div>
+            <p class="text-xs text-gray-400 mt-4">&copy; 2026 جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
